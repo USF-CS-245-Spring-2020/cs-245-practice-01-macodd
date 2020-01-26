@@ -34,7 +34,7 @@ public class Practice01MathIterative implements Practice01Math {
         int total = 1;
 
         // less than zero exception
-        if (n < 1)
+        if (n < 0)
             throw new Exception("Number must be greater than 0");
 
         // iteration from 1 to n multiplying its values
