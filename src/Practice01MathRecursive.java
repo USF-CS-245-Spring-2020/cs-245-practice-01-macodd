@@ -31,12 +31,12 @@ public class Practice01MathRecursive implements Practice01Math{
     public int fact(int n) throws Exception {
 
         // less than zero exception
-        if (n < 1)
+        if (n < 0)
             throw new Exception("Number must be greater than 0");
 
         // base case
-        if(n == 1)
-            return 1;
+        if(n < 2)
+            return n;
 
         // returns n multiplied by n minus 1
         return n * fact(n -1);
